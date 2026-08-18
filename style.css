@@ -302,7 +302,15 @@ h1, h2, h3, h4, h5, h6 { color: var(--secondary); line-height: 1.2; font-weight:
     .benefits-grid, .testimonials-grid { grid-template-columns: 1fr; }
     .power-features { grid-template-columns: 1fr; }
     .smart-grid { grid-template-columns: 1fr; }
-    .sb-item { width: 100%; }
+    .smart-banner { flex-wrap: wrap; gap: 20px 10px; justify-content: center; padding: 25px 15px; }
+    .sb-item { width: 45%; margin-bottom: 10px; }
+    .sb-item h4 { font-size: 1.5rem; }
+    .sb-item p { font-size: 0.85rem; }
+    .sb-divider { display: none; }
+    
+    .btn { font-size: 0.8rem; padding: 12px 20px; }
+    .btn-large { font-size: 0.8rem !important; padding: 15px 20px !important; }
+    .cta-badge { font-size: 0.8rem !important; padding: 8px 15px; }
     
     .faq-container { padding: 40px 20px; border-radius: 25px; }
     .footer-top { grid-template-columns: 1fr; gap: 30px; }
