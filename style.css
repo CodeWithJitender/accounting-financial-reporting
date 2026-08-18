@@ -172,7 +172,7 @@ h1, h2, h3, h4, h5, h6 { color: var(--secondary); line-height: 1.2; font-weight:
 /* Testimonials */
 .testi-header { text-align: left; margin-bottom: 50px; }
 .testi-header .section-title { font-size: 2.8rem; margin-bottom: 15px; text-align: left; color: var(--secondary); }
-.testi-header .section-subtitle { font-size: 1.1rem; color: var(--text-gray); max-width: 600px; text-align: left; line-height: 1.6; }
+.testi-header .section-subtitle { font-size: 1.1rem; color: var(--text-gray); max-width: 600px; text-align: left; line-height: 1.6; margin-left: 0; }
 .testimonials-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; }
 .testimonial-box { background: var(--secondary); color: #fff; padding: 40px; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); display: flex; flex-direction: column; transition: 0.3s; }
 .testimonial-box:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
