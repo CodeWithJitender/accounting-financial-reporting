@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     // Accordion Logic
     const accordionHeaders = document.querySelectorAll('.accordion-header');
-    
+
     accordionHeaders.forEach(header => {
         header.addEventListener('click', () => {
             const item = header.parentElement;
             const content = item.querySelector('.accordion-content');
-            
+
             // Close all other accordions
             document.querySelectorAll('.accordion-item').forEach(otherItem => {
                 if (otherItem !== item && otherItem.classList.contains('active')) {
@@ -15,10 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     otherItem.querySelector('.accordion-content').style.maxHeight = null;
                 }
             });
-            
+
             // Toggle current accordion
             item.classList.toggle('active');
-            
+
             if (item.classList.contains('active')) {
                 // Set max-height to scrollHeight for smooth transition
                 content.style.maxHeight = content.scrollHeight + 40 + 'px'; // +40 for padding
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-    
+
     // Set initial max-height for the active accordion
     const activeAccordion = document.querySelector('.accordion-item.active .accordion-content');
     if (activeAccordion) {
@@ -37,20 +37,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // EmailJS Form Submission
     const contactForm = document.getElementById('contact-form');
     const popup = document.getElementById('thank-you-popup');
-    
+
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            
+
             const btn = contactForm.querySelector('button[type="submit"]');
             const originalText = btn.innerText;
-            
+
             btn.innerText = 'Sending...';
             btn.style.opacity = '0.8';
             btn.disabled = true;
-            
+
             // service_id, template_id, form_element
-            emailjs.sendForm('service_5ukbpwr', 'template_opd83xj', contactForm)
+            emailjs.sendForm('service_5ukbpwr', 'template_x0jzdeu', contactForm)
                 .then(() => {
                     // Show Popup
                     popup.classList.add('active');
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     btn.innerText = originalText;
                     btn.style.opacity = '1';
                     btn.disabled = false;
-                    
+
                     // Hide popup after 3 seconds
                     setTimeout(() => {
                         popup.classList.remove('active');
@@ -72,15 +72,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
         });
     }
-    
+
     // Smooth Scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             const targetId = this.getAttribute('href');
-            if(targetId === '#') return;
-            
+            if (targetId === '#') return;
+
             const targetElement = document.querySelector(targetId);
-            if(targetElement) {
+            if (targetElement) {
                 e.preventDefault();
                 targetElement.scrollIntoView({
                     behavior: 'smooth'
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Testimonials Swiper
-    if(document.querySelector('.testimonials-slider')) {
+    if (document.querySelector('.testimonials-slider')) {
         new Swiper('.testimonials-slider', {
             slidesPerView: 1,
             spaceBetween: 30,
