@@ -73,10 +73,6 @@ h1, h2, h3, h4, h5, h6 { color: var(--secondary); line-height: 1.2; font-weight:
 .nav-links a { color: #fff; font-size: 0.95rem; font-weight: 500; }
 .nav-links a:hover { color: var(--primary); }
 
-@media (min-width: 1025px) {
-    .nav-container { position: relative; }
-    .logo { position: absolute; left: 50%; transform: translateX(-50%); }
-}
 
 /* Hero */
 .hero { position: relative; padding: 180px 0 120px; color: #fff; overflow: hidden; background: #333 url('image/hero-bg.png') no-repeat center center / cover; }
@@ -292,6 +288,7 @@ h1, h2, h3, h4, h5, h6 { color: var(--secondary); line-height: 1.2; font-weight:
     .hero-subtitle { font-size: 1.1rem; }
     
     .nav-links, .nav-btn { display: none; }
+    .nav-container { justify-content: center; }
     .benefits-grid { grid-template-columns: 1fr; }
     .power-features { grid-template-columns: 1fr; }
     .smart-grid { grid-template-columns: 1fr; }
