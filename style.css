@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6 { color: var(--secondary); line-height: 1.2; font-weight:
 .capacity-pill { background: rgba(255,255,255,0.15); color: #fff; text-align: center; padding: 15px 20px; border-radius: 50px; font-weight: 600; font-size: 0.95rem; margin-top: 30px; transition: 0.3s; }
 .capacity-pill:hover { background: rgba(255,255,255,0.25); }
 
-.power-features { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+.power-features { display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px; }
 .power-feature-box { background: #fff; padding: 35px 30px; border-radius: var(--radius-md); display: flex; flex-direction: column; gap: 15px; box-shadow: var(--shadow-sm); transition: 0.3s; }
 .power-feature-box:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
 .pf-header { display: flex; align-items: center; gap: 15px; }
@@ -273,6 +273,7 @@ h1, h2, h3, h4, h5, h6 { color: var(--secondary); line-height: 1.2; font-weight:
     .faq-container { padding: 60px 40px; }
     .footer-top { grid-template-columns: repeat(2, 1fr); gap: 40px; }
     .footer-col-cta { text-align: left; }
+    .power-features { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
