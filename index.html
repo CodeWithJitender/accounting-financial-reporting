@@ -11,6 +11,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -355,8 +356,10 @@
                     handled consistently and with the right support.</p>
             </div>
 
-            <div class="testimonials-grid mt-5">
-                <div class="testimonial-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper testimonials-slider mt-5" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-box">
                     <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
                     <h4>"It Took a Lot Off Our Plate."</h4>
                     <p>"We were spending too much time chasing entries and checking whether everything had been
@@ -370,8 +373,10 @@
                             <span class="client-role">Founder, Professional Services Firm - Austin, TX</span>
                         </div>
                     </div>
-                </div>
-                <div class="testimonial-box" data-aos="fade-up" data-aos-delay="200">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-box">
                     <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
                     <h4>"We Finally Have Clarity."</h4>
                     <p>"What I appreciate most is how easy it is to get a clear picture of our finances. The records are
@@ -385,8 +390,10 @@
                             <span class="client-role">Finance Manager, Growing Business - Chicago, IL</span>
                         </div>
                     </div>
-                </div>
-                <div class="testimonial-box" data-aos="fade-up" data-aos-delay="300">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-box">
                     <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
                     <h4>"We Didn't Need Another Hire."</h4>
                     <p>"Adding another full-time person just for bookkeeping didn't make sense for us. The team gave us
@@ -399,8 +406,10 @@
                             <span class="client-role">Founder, Small Business - Atlanta, GA</span>
                         </div>
                     </div>
-                </div>
-                <div class="testimonial-box" data-aos="fade-up" data-aos-delay="400">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-box">
                     <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
                     <h4>"Year-End Wasn't a Fire Drill."</h4>
                     <p>"For once, we weren't scrambling to get the books together when year-end came around. Everything
@@ -413,7 +422,11 @@
                             <span class="client-role">Operations Director, Business Services - Seattle, WA</span>
                         </div>
                     </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- Optional pagination -->
+                <div class="swiper-pagination mt-4" style="position: relative; margin-top: 30px;"></div>
             </div>
         </div>
     </section>
@@ -604,6 +617,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({

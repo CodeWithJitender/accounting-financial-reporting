@@ -88,4 +88,29 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Testimonials Swiper
+    if(document.querySelector('.testimonials-slider')) {
+        new Swiper('.testimonials-slider', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3, /* Use 3 for desktop to loop smoothly */
+                }
+            }
+        });
+    }
 });

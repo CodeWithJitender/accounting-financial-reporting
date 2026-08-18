@@ -173,8 +173,8 @@ h1, h2, h3, h4, h5, h6 { color: var(--secondary); line-height: 1.2; font-weight:
 .testi-header { text-align: left; margin-bottom: 50px; }
 .testi-header .section-title { font-size: 2.8rem; margin-bottom: 15px; text-align: left; color: var(--secondary); }
 .testi-header .section-subtitle { font-size: 1.1rem; color: var(--text-gray); max-width: 600px; text-align: left; line-height: 1.6; margin-left: 0; }
-.testimonials-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; }
-.testimonial-box { background: var(--secondary); color: #fff; padding: 40px; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); display: flex; flex-direction: column; transition: 0.3s; }
+.swiper-slide { height: auto; }
+.testimonial-box { height: 100%; background: var(--secondary); color: #fff; padding: 40px; border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); display: flex; flex-direction: column; transition: 0.3s; }
 .testimonial-box:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
 .quote-icon { color: var(--primary); font-size: 24px; margin-bottom: 20px; }
 .testimonial-box h4 { color: #fff; font-size: 1.25rem; margin-bottom: 15px; line-height: 1.4; }
@@ -288,7 +288,7 @@ h1, h2, h3, h4, h5, h6 { color: var(--secondary); line-height: 1.2; font-weight:
     .hero-subtitle { font-size: 1.1rem; }
     
     .nav-links, .nav-btn { display: none; }
-    .benefits-grid, .testimonials-grid { grid-template-columns: 1fr; }
+    .benefits-grid { grid-template-columns: 1fr; }
     .power-features { grid-template-columns: 1fr; }
     .smart-grid { grid-template-columns: 1fr; }
     
@@ -347,3 +347,6 @@ h1, h2, h3, h4, h5, h6 { color: var(--secondary); line-height: 1.2; font-weight:
 .popup-overlay.active .popup-content {
     transform: translateY(0);
 }
+
+.swiper-pagination-bullet { background: var(--secondary); opacity: 0.5; }
+.swiper-pagination-bullet-active { background: var(--primary); opacity: 1; }
