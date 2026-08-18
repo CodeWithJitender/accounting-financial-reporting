@@ -19,7 +19,7 @@
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
-html { overflow-x: hidden; }
+
 body { font-family: var(--font-main); color: var(--text-dark); line-height: 1.6; font-size: 16px; overflow-x: hidden; }
 img { max-width: 100%; height: auto; }
 a { text-decoration: none; color: inherit; transition: 0.3s; }
@@ -192,7 +192,7 @@ h1, h2, h3, h4, h5, h6 { color: var(--secondary); line-height: 1.2; font-weight:
 .faq-container { background: #fff; border-radius: 40px 40px 0 0; padding: 80px; box-shadow: 0 -10px 40px rgba(0,0,0,0.05); }
 .faq-header { margin-bottom: 50px; }
 .faq-header .section-title { text-align: left; font-size: 2.8rem; margin-bottom: 15px; color: var(--secondary); }
-.faq-header .section-subtitle { text-align: left; max-width: 500px; color: var(--text-gray); line-height: 1.6; font-size: 1.05rem; }
+.faq-header .section-subtitle { text-align: left; max-width: 500px; color: var(--text-gray); line-height: 1.6; font-size: 1.05rem; margin-left: 0; }
 .faq-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
 .faq-image-container { position: relative; padding-bottom: 60px; }
 .faq-main-img { width: 100%; height: auto; border-radius: var(--radius-lg); object-fit: cover; }
