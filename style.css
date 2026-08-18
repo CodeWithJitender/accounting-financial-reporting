@@ -19,7 +19,9 @@
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
+html { overflow-x: hidden; }
 body { font-family: var(--font-main); color: var(--text-dark); line-height: 1.6; font-size: 16px; overflow-x: hidden; }
+img { max-width: 100%; height: auto; }
 a { text-decoration: none; color: inherit; transition: 0.3s; }
 ul { list-style: none; }
 h1, h2, h3, h4, h5, h6 { color: var(--secondary); line-height: 1.2; font-weight: 700; }
@@ -277,26 +279,39 @@ h1, h2, h3, h4, h5, h6 { color: var(--secondary); line-height: 1.2; font-weight:
 }
 
 @media (max-width: 768px) {
+    .container { padding: 0 30px; }
+    .section { padding: 60px 0; }
+    .hero { padding: 140px 0 80px; }
+    
     .hero-content { flex-direction: column; text-align: center; }
-    .hero-form-wrapper { width: 100%; flex: none; }
-    .hero-desc { margin: 0 auto; }
+    .hero-form-wrapper { width: 100%; flex: none; max-width: 100%; }
+    .hero-desc { margin: 0 auto; font-size: 1rem; }
+    .hero-title { font-size: 2.5rem; }
+    .hero-subtitle { font-size: 1.1rem; }
+    
     .nav-links, .nav-btn { display: none; }
-    .trust-items { flex-direction: column; gap: 15px; }
+    .trust-items { flex-direction: column; gap: 15px; text-align: center; }
     .benefits-grid, .testimonials-grid { grid-template-columns: 1fr; }
     .power-features { grid-template-columns: 1fr; }
     .smart-grid { grid-template-columns: 1fr; }
     .sb-item { width: 100%; }
-
-
-    .faq-container { padding: 40px 20px; }
+    
+    .faq-container { padding: 40px 20px; border-radius: 25px; }
     .footer-top { grid-template-columns: 1fr; gap: 30px; }
-    .footer-bottom { flex-direction: column; gap: 15px; }
+    .footer-bottom { flex-direction: column; gap: 15px; text-align: center; }
+    
+    /* Global Typography Fixes */
+    .section-title,
+    .cta-left h2, 
+    .power-header-left .section-title, 
+    .smart-header .section-title, 
+    .testi-header .section-title, 
+    .faq-header .section-title { font-size: 1.8rem; line-height: 1.3; }
+    .section-subtitle { font-size: 1rem; }
     
     /* Bottom CTA specific fixes */
     .cta-banner { flex-direction: column; border-radius: var(--radius-lg); }
-    .cta-left, .cta-right { padding: 40px 30px; }
-    .cta-left h2, .power-header-left .section-title, .smart-header .section-title, .testi-header .section-title, .faq-header .section-title { font-size: 2.2rem; }
-    .section-title { font-size: 2.2rem; }
+    .cta-left, .cta-right { padding: 40px 20px; }
 }
 
 /* Popup Styles */
