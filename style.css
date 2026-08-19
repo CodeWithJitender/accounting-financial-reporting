@@ -24,7 +24,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     overflow-x: hidden;
     width: 100%;
 }
@@ -280,7 +281,7 @@ h6 {
     padding: 180px 0 120px;
     color: #fff;
     overflow: hidden;
-    background: #333 url('image/hero-bg.png') no-repeat center center / cover;
+    background: #333 url('image/hero-bg.jpg') no-repeat center center / cover;
 }
 
 .hero-overlay {
@@ -1110,7 +1111,7 @@ h6 {
 /* Bottom CTA */
 .bottom-cta-section {
     padding: 100px 0;
-    background: url('image/lets-take.png') center/cover no-repeat;
+    background: url('image/lets-take.jpg') center/cover no-repeat;
 }
 
 .cta-banner {
@@ -1574,10 +1575,12 @@ h6 {
     gap: 50px;
     align-items: center;
 }
+
 .process-card-wrapper {
     align-self: stretch;
     display: flex;
 }
+
 .process-highlight-card {
     background: #ffeef3;
     padding: 50px 40px;
@@ -1588,6 +1591,7 @@ h6 {
     box-shadow: var(--shadow-sm);
     width: 100%;
 }
+
 .phc-subtitle {
     font-size: 0.8rem;
     font-weight: 700;
@@ -1595,24 +1599,30 @@ h6 {
     margin-bottom: 20px;
     text-transform: uppercase;
 }
+
 .phc-title {
     font-size: 2rem;
     color: var(--secondary);
     margin-bottom: 20px;
     line-height: 1.2;
 }
+
 .phc-desc {
     color: var(--text-gray);
     font-size: 1.05rem;
     margin-bottom: 30px;
 }
-.messy-grid, .handled-features {
+
+.messy-grid,
+.handled-features {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     margin-top: 50px;
 }
-.messy-card, .handled-feature-box {
+
+.messy-card,
+.handled-feature-box {
     background: #fff;
     padding: 40px 30px;
     border-radius: var(--radius-md);
@@ -1622,15 +1632,20 @@ h6 {
     box-shadow: var(--shadow-sm);
     transition: 0.3s;
 }
-.messy-card:hover, .handled-feature-box:hover {
+
+.messy-card:hover,
+.handled-feature-box:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-md);
 }
-.messy-header, .hf-header {
+
+.messy-header,
+.hf-header {
     display: flex;
     align-items: center;
     gap: 15px;
 }
+
 .messy-number {
     width: 35px;
     height: 35px;
@@ -1644,6 +1659,7 @@ h6 {
     font-size: 1.1rem;
     flex-shrink: 0;
 }
+
 .hf-number {
     width: 35px;
     height: 35px;
@@ -1657,30 +1673,41 @@ h6 {
     font-size: 1.1rem;
     flex-shrink: 0;
 }
-.messy-card p, .handled-feature-box p {
+
+.messy-card p,
+.handled-feature-box p {
     color: var(--text-gray);
     font-size: 0.95rem;
     margin: 0;
     line-height: 1.6;
 }
-.messy-header h4, .hf-header h4 {
+
+.messy-header h4,
+.hf-header h4 {
     font-size: 1.2rem;
     margin: 0;
     color: var(--secondary);
 }
+
 .faq-section-new {
     padding: 80px 0;
     background: #fdfdfd;
 }
+
 .faq-container-new {
     max-width: 900px;
     margin: 0 auto;
 }
+
 .faq-layout-new .accordion-item {
     margin-bottom: 15px;
 }
+
 @media (max-width: 991px) {
-    .process-layout, .messy-grid, .handled-features {
+
+    .process-layout,
+    .messy-grid,
+    .handled-features {
         grid-template-columns: 1fr;
     }
 }
@@ -1699,28 +1726,34 @@ h6 {
 .new-cta-style {
     padding: 80px 0;
 }
+
 .cta-banner-new {
     display: flex;
     align-items: center;
     gap: 50px;
     padding: 60px 50px;
 }
+
 .cta-left-new {
     flex: 1;
 }
+
 .cta-left-content {
     border-left: 4px solid var(--primary);
     padding-left: 30px;
 }
+
 .cta-left-content h2 {
     color: var(--secondary);
     font-size: 2.8rem;
 }
+
 .cta-checklist-new {
     list-style: none;
     padding: 0;
     margin-top: 30px;
 }
+
 .cta-checklist-new li {
     display: flex;
     align-items: center;
@@ -1729,6 +1762,7 @@ h6 {
     font-size: 0.95rem;
     font-weight: 600;
 }
+
 .cta-checklist-new .pink-dot {
     width: 6px;
     height: 6px;
@@ -1737,11 +1771,13 @@ h6 {
     margin-right: 15px;
     flex-shrink: 0;
 }
+
 .cta-right-new {
     flex: 0.8;
     display: flex;
     justify-content: flex-end;
 }
+
 .cta-card {
     background: #2b414d;
     padding: 50px 40px;
@@ -1749,32 +1785,40 @@ h6 {
     width: 100%;
     max-width: 450px;
 }
+
 @media (max-width: 991px) {
     .cta-banner-new {
         flex-direction: column;
         padding: 40px 30px;
     }
+
     .cta-right-new {
         justify-content: flex-start;
         width: 100%;
     }
+
     .cta-card {
         max-width: 100%;
     }
 }
+
 @media (max-width: 768px) {
     .new-cta-style {
         padding: 50px 0;
     }
+
     .cta-banner-new {
         padding: 30px 20px;
     }
+
     .cta-left-content {
         padding-left: 15px;
     }
+
     .cta-left-content h2 {
         font-size: 2rem;
     }
+
     .cta-card {
         padding: 30px 20px;
     }
