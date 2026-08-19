@@ -1089,7 +1089,7 @@ h6 {
 }
 
 .accordion-header {
-    padding: 25px 30px;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1134,7 +1134,7 @@ h6 {
 }
 
 .accordion-content p {
-    padding: 0 30px 25px;
+    padding: 0 20px 15px 70px;
     margin: 0;
     color: rgba(255, 255, 255, 0.9);
     font-size: 0.95rem;
